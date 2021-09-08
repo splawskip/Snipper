@@ -1,0 +1,28 @@
+{
+    "name": "snipper",
+    "version": "1.0.0",
+    "description": "Pretty easy HTML and CSS landing page.",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/splawskip/Snipper.git"
+    },
+    "author": "psplawki.dev",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/splawskip/Snipper/issues"
+    },
+    "homepage": "https://github.com/splawskip/Snipper#readme",
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.0-rc.0",
+        "parcel": "^2.0.0-rc.0",
+        "sass": "^1.39.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^22.0.0"
+    },
+    "dependencies": {}
+}
