@@ -2,16 +2,53 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/css/normalize.css">
-	<link rel="stylesheet" href="./assets/scss/main.scss">
-	<title>Snipper</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/scss/main.scss">
+    <title>Snipper</title>
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container">
+            <nav class="nav header__nav">
+                <img src="./assets/images/logo.png" alt="Snipper" class="logo nav__item">
+                <img src="./assets/icons/search.svg" alt="Loupe icon" class="loupe nav__item">
+                <button class="btn nav__item">Sign in</button>
+                <button class="btn nav__item">Get started — it’s free</button>
+            </nav>
+            <article class="header__content">
+                <h1 class="h1 header__title">Gorgeous Code Snippets</h1>
+                <p class="desc header__desc">With Snipper, create fully customizable code snippets in a matter of
+                    seconds right from
+                    your browser.</p>
+                <button class="btn header__btn">Get started — it’s free</button>
+                <p class="desc header__desc">No credit card required.</p>
+            </article>
+            <img src="./assets/images/code-snippet.png" alt="code-snippet" class="header__img">
+        </div>
+    </header>
+    <div class="container">
+        <main class="homepage-content">
+            <section class="call-to-action-module">
+                <article class="call-to-action">
+                    <h2 class="h2 call-to-action__heading">A fully customizable code snippet editor</h2>
+                    <p class="call-to-action__desc">Fully customize the color scheme of your code snippet, or use our
+                        own premade color schemes. Export
+                        your
+                        code snippets in JPG, PDF, PNG, or any of the other 10+ common extensions.</p>
+                    <button class="call-to-action__button">Get started — it’s free</button>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <img src="./assets/images/logo.png" alt="Snipper" class="footer__logo">
+            <a href="#" class="desc footer__terms">Terms and Conditions</a>
+            <a href="#" class="desc footer__policy">Privacy Policy</a>
+        </footer>
+    </div>
 </body>
 
 </html>
