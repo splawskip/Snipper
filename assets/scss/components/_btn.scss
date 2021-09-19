@@ -1,27 +1,25 @@
-@use '../base/transitions';
-
 .btn {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
+    padding: .75rem 1.25rem;
+    font-size: .9rem;
     font-weight: 600;
     line-height: 1.35;
-    color: var(--white);
+    color: var(--clr-light);
     text-align: center;
     text-decoration: none;
-    background-color: var(--black);
+    background-color: var(--clr-dark);
     border: 0;
-    border-radius: 0.25rem;
-    transition: color 0.3s transitions.$swing,
-        background-color 0.3s transitions.$swing;
+    border-radius: .25rem;
+    transition: color .3s var(--transition-swing),
+        background-color .3s var(--transition-swing);
 
     .decoration {
         font-weight: 400;
-        color: var(--silverChalice);
+        color: var(--clr-tone-light);
     }
 
     &--transparent {
         font-weight: 400;
-        color: var(--black);
+        color: var(--clr-dark);
         background-color: transparent;
     }
 
@@ -31,8 +29,8 @@
         height: 35px;
         background: transparent;
         border: 0;
-        border-top: 5px solid var(--black);
-        transition: 0.3s transform transitions.$swing;
+        border-top: 5px solid var(--clr-dark);
+        transition: .3s transform var(--transition-swing);
 
         &::before,
         &::after {
@@ -40,13 +38,13 @@
             top: 0;
             left: 0;
             width: 100%;
-            content: "";
-            border-top: 5px solid var(--black);
+            content: '';
+            border-top: 5px solid var(--clr-dark);
             transform: translateY(10px);
         }
 
         &::after {
-            transition: transform transitions.$swing;
+            transition: transform var(--transition-swing);
             transform: translateY(25px);
         }
 
@@ -61,9 +59,9 @@
     }
 
     &:hover {
-        color: var(--dark);
-        background-color: var(--white);
-        transition: color 0.3s transitions.$swing,
-            background-color 0.3s transitions.$swing;
+        color: var(--clr-dark);
+        background-color: var(--clr-light);
+        transition: color .3s var(--transition-swing),
+            background-color .3s var(--transition-swing);
     }
 }

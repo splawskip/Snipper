@@ -1,0 +1,18 @@
+:root {
+    // Colors.
+    --clr-dark: #000;
+    --clr-light: #FFF;
+    --clr-tone-light: #ADADAD;
+    // Breakpoints.
+    --breakpoint-desktop: 1140px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-phone: 415px;
+    // Container settings.
+    --container-width: 1220px;
+    // Transitions.
+    --transition-swing: .2s cubic-bezier(.25, .8, .5, 1);
+}
+// Declare breakpoints as SCSS variables too, cuz media-queries does not support CSS custom properties.
+$desktop: 1140px;
+$tablet: 768px;
+$phone: 415px;

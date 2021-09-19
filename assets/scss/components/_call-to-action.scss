@@ -1,5 +1,4 @@
-@use '../base/breakpoints';
-@use '../base/transitions';
+@use './../base/variables' as breakpoints;
 
 .call-to-action {
     display: flex;
@@ -24,11 +23,11 @@
     }
 
     &__desc {
-        margin-top: 0.8rem;
+        margin-top: .8rem;
     }
 
     &__btn {
-        margin-top: 0.9rem;
+        margin-top: .9rem;
     }
 
     &__images-wrapper {
@@ -47,7 +46,7 @@
         &:hover {
             & + .call-to-action__floating-editor {
                 left: 0;
-                transition: left transitions.$swing;
+                transition: left var(--transition-swing);
             }
         }
 
@@ -61,7 +60,7 @@
         top: 1.5rem;
         left: -25%;
         pointer-events: none;
-        transition: left transitions.$swing;
+        transition: left var(--transition-swing);
     }
 
     @media screen and (max-width: breakpoints.$tablet) {
