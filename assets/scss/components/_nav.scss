@@ -1,0 +1,33 @@
+@use '../base/breakpoints';
+
+.nav {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2rem;
+    background-color: transparent;
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &__item {
+        @media screen and (max-width: breakpoints.$tablet) {
+            &:not(.nav__logo) {
+                display: none;
+            }
+        }
+    }
+
+    &__hamburger {
+        display: none;
+
+        @media screen and (max-width: breakpoints.$tablet) {
+            &:not(.nav__logo) {
+                display: block;
+            }
+        }
+    }
+}

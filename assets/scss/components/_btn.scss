@@ -1,0 +1,63 @@
+.btn {
+    padding: .75rem 1.25rem;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--black);
+    border: 0;
+    border-radius: .25rem;
+
+    .decoration {
+        font-weight: 400;
+        color: var(--silverChalice);
+    }
+
+    &--transparent {
+        font-weight: 400;
+        color: var(--black);
+        background-color: transparent;
+    }
+
+    &--hamburger {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        background: transparent;
+        border: 0;
+        border-top: 5px solid var(--black);
+        transition: .3s transform linear;
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            content: '';
+            border-top: 5px solid var(--black);
+            transform: translateY(10px);
+        }
+
+        &::after {
+            transition: .3s transform linear;
+            transform: translateY(25px);
+        }
+
+        &:focus {
+            border: none;
+            transform: rotate(45deg) translateY(5px);
+        }
+
+        &:focus::after {
+            transform: rotate(-90deg) translateX(-10px);
+        }
+    }
+
+    &:hover {
+        color: var(--dark);
+        background-color: var(--white);
+    }
+}

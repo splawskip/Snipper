@@ -1,0 +1,22 @@
+@use 'breakpoints';
+
+.page-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1220px;
+}
+
+.homepage-content {
+    padding: 0 2rem;
+}

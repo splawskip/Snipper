@@ -1,0 +1,35 @@
+@use '../base/breakpoints';
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+
+    &__item {
+        font-size: .8rem;
+        line-height: 1.35rem;
+        color: #383838;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--silverChalice);
+        }
+
+        &:first-of-type {
+            margin-right: auto;
+
+            @media screen and (max-width: breakpoints.$phone) {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: breakpoints.$phone) {
+        justify-content: flex-start;
+    }
+}

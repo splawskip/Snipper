@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/hero-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 2rem;
+        margin-top: 2.75rem;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__desc {
+        margin: .5rem 0 0 0;
+    }
+
+    &__btn {
+        margin: .8rem 0 0 0;
+    }
+
+    &__info {
+        margin: .8rem 0 0 0;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        padding: 0 2rem;
+        margin-top: 2rem;
+    }
+}

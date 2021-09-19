@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel index.html",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint:scss": "stylelint '**/*.{css,scss,sass}' --config .stylelintrc.json",
+		"fix:scss": "stylelint '**/*.{css,scss,sass}' --config .stylelintrc.json --fix"
     },
     "repository": {
         "type": "git",
@@ -22,7 +24,9 @@
         "@parcel/transformer-sass": "^2.0.0-rc.0",
         "sass": "^1.39.0",
         "stylelint": "^13.13.1",
-        "stylelint-config-standard": "^22.0.0"
+        "stylelint-config-recess-order": "^2.5.0",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-scss": "^3.21.0"
     },
     "dependencies": {
         "parcel": "^2.0.0-rc.0"
