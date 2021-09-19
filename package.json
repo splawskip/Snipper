@@ -2,9 +2,11 @@
     "name": "snipper",
     "version": "1.0.0",
     "description": "Pretty easy HTML and CSS landing page.",
-    "main": "index.js",
     "scripts": {
-        "start": "parcel index.html",
+        "watch": "parcel index.html",
+        "build": "parcel build index.html",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint:scss": "stylelint '**/*.{css,scss,sass}' --config .stylelintrc.json",
 		"fix:scss": "stylelint '**/*.{css,scss,sass}' --config .stylelintrc.json --fix"
