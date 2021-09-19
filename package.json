@@ -5,7 +5,7 @@
     "description": "Pretty easy HTML and CSS landing page.",
     "scripts": {
         "watch": "parcel index.html",
-        "build": "parcel build index.html",
+        "build": "parcel build index.html --public-url ./",
         "predeploy": "parcel build index.html",
         "deploy": "gh-pages -d dist",
         "test": "echo \"Error: no test specified\" && exit 1",
