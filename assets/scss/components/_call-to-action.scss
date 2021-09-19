@@ -24,11 +24,11 @@
     }
 
     &__desc {
-        margin-top: .8rem;
+        margin-top: 0.8rem;
     }
 
     &__btn {
-        margin-top: .9rem;
+        margin-top: 0.9rem;
     }
 
     &__images-wrapper {
@@ -53,11 +53,11 @@
         position: absolute;
         top: 1.5rem;
         left: -25%;
-        transition: left 1.5s transitions.$swing;
+        transition: left transitions.$swing;
 
         &:hover {
             left: 0;
-            transition: left 1.5s transitions.$swing;
+            transition: left transitions.$swing;
         }
     }
 

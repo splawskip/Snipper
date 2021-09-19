@@ -1,8 +1,8 @@
 @use '../base/transitions';
 
 .btn {
-    padding: .75rem 1.25rem;
-    font-size: .9rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
     font-weight: 600;
     line-height: 1.35;
     color: var(--white);
@@ -10,9 +10,8 @@
     text-decoration: none;
     background-color: var(--black);
     border: 0;
-    border-radius: .25rem;
-    transition: color .5s transitions.$swing,
-        background-color .5s transitions.$swing;
+    border-radius: 0.25rem;
+    transition: color transitions.$swing, background-color transitions.$swing;
 
     .decoration {
         font-weight: 400;
@@ -32,7 +31,7 @@
         background: transparent;
         border: 0;
         border-top: 5px solid var(--black);
-        transition: .3s transform linear;
+        transition: 0.3s transform transitions.$swing;
 
         &::before,
         &::after {
@@ -40,13 +39,13 @@
             top: 0;
             left: 0;
             width: 100%;
-            content: '';
+            content: "";
             border-top: 5px solid var(--black);
             transform: translateY(10px);
         }
 
         &::after {
-            transition: .3s transform linear;
+            transition: 0.3s transform transitions.$swing;
             transform: translateY(25px);
         }
 
@@ -63,7 +62,7 @@
     &:hover {
         color: var(--dark);
         background-color: var(--white);
-        transition: color .5s transitions.$swing,
-            background-color .5s transitions.$swing;
+        transition: color 0.5s transitions.$swing,
+            background-color 0.5s transitions.$swing;
     }
 }
