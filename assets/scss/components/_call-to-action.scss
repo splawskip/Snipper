@@ -43,8 +43,15 @@
         }
     }
 
-    @media screen and (max-width: breakpoints.$tablet) {
-        &__editor {
+    &__editor {
+        &:hover {
+            & + .call-to-action__floating-editor {
+                left: 0;
+                transition: left transitions.$swing;
+            }
+        }
+
+        @media screen and (max-width: breakpoints.$tablet) {
             width: 100%;
         }
     }
@@ -53,12 +60,8 @@
         position: absolute;
         top: 1.5rem;
         left: -25%;
+        pointer-events: none;
         transition: left transitions.$swing;
-
-        &:hover {
-            left: 0;
-            transition: left transitions.$swing;
-        }
     }
 
     @media screen and (max-width: breakpoints.$tablet) {

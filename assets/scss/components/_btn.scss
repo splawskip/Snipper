@@ -11,7 +11,8 @@
     background-color: var(--black);
     border: 0;
     border-radius: 0.25rem;
-    transition: color transitions.$swing, background-color transitions.$swing;
+    transition: color 0.3s transitions.$swing,
+        background-color 0.3s transitions.$swing;
 
     .decoration {
         font-weight: 400;
@@ -45,7 +46,7 @@
         }
 
         &::after {
-            transition: 0.3s transform transitions.$swing;
+            transition: transform transitions.$swing;
             transform: translateY(25px);
         }
 
@@ -62,7 +63,7 @@
     &:hover {
         color: var(--dark);
         background-color: var(--white);
-        transition: color 0.5s transitions.$swing,
-            background-color 0.5s transitions.$swing;
+        transition: color 0.3s transitions.$swing,
+            background-color 0.3s transitions.$swing;
     }
 }
