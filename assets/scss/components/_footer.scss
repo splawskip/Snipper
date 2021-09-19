@@ -1,4 +1,5 @@
 @use '../base/breakpoints';
+@use '../base/transitions';
 
 .footer {
     display: flex;
@@ -11,13 +12,15 @@
     padding: 2rem;
 
     &__item {
-        font-size: .8rem;
+        font-size: 0.8rem;
         line-height: 1.35rem;
         color: #383838;
         text-decoration: none;
+        transition: color 0.3s transitions.$swing;
 
         &:hover {
             color: var(--silverChalice);
+            transition: color 0.3s transitions.$swing;
         }
 
         &:first-of-type {

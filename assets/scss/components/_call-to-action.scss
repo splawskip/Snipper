@@ -1,4 +1,5 @@
 @use '../base/breakpoints';
+@use '../base/transitions';
 
 .call-to-action {
     display: flex;
@@ -52,6 +53,12 @@
         position: absolute;
         top: 1.5rem;
         left: -25%;
+        transition: left 1.5s transitions.$swing;
+
+        &:hover {
+            left: 0;
+            transition: left 1.5s transitions.$swing;
+        }
     }
 
     @media screen and (max-width: breakpoints.$tablet) {
