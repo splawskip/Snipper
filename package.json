@@ -6,8 +6,8 @@
     "scripts": {
         "watch": "parcel index.html",
         "build": "parcel build index.html",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "predeploy": "parcel build index.html",
+        "deploy": "gh-pages -d dist",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint:scss": "stylelint '**/*.{css,scss,sass}' --config .stylelintrc.json",
         "fix:scss": "stylelint '**/*.{css,scss,sass}' --config .stylelintrc.json --fix"
